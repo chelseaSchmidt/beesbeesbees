@@ -30,6 +30,10 @@ describe('ForagerBee class functionality', function() {
     expect(foragerBee.eat).to.be.a('function');
   });
 
+  it('should return "yum!" when the "eat" method is called', function() {
+    expect(foragerBee.eat()).to.equal('yum!');
+  });
+
   /*  New methods and properties  */
 
   it('should have a `canFly` property that is set `true`', function() {

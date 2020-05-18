@@ -42,6 +42,10 @@ describe('RetiredForagerBee class functionality', function() {
     expect(retiredForager.treasureChest).to.be.a('array');
   });
 
+  it('should return "yum!" when the "eat" method is called', function() {
+    expect(retiredForager.eat()).to.equal('yum!');
+  });
+
   /*  New methods and properties  */
 
   it('should have an always winning `gamble` method that allows the bee to add a `treasure` to the `treasureChest`', function() {

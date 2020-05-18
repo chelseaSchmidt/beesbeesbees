@@ -26,6 +26,10 @@ describe('Bee class functionality', function() {
     expect(bee.eat).to.be.a('function');
   });
 
+  it('should return "yum!" when the "eat" method is called', function() {
+    expect(bee.eat()).to.equal('yum!');
+  });
+
   /*  New methods and properties  */
 
   it('should have a `job` property that is set to `keep on growing`', function() {

@@ -30,6 +30,10 @@ describe('HoneyMakerBee class functionality', function() {
     expect(honeyBee.eat).to.be.a('function');
   });
 
+  it('should return "yum!" when the "eat" method is called', function() {
+    expect(honeyBee.eat()).to.equal('yum!');
+  });
+
   /*  New methods and properties  */
 
   it('should have a `honeyPot` property that is set to `0`', function() {
