@@ -22,4 +22,8 @@ describe('Grub class functionality', function() {
     expect(grub.eat).to.be.a('function');
   });
 
+  it('should return "yum!" when the "eat" method is called', function() {
+    expect(grub.eat()).to.equal('yum!');
+  });
+
 });
